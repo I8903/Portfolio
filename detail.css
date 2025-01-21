@@ -67,10 +67,6 @@ header {
   height: 50px;
   background-color: #FFEACE;
 
-  .logo {
-    padding-top: 10px;
-    height: 100%;
-  }
 
   h1 img {
     width: 100%;
@@ -485,9 +481,6 @@ footer {
     background-color: #FFEACE;
     position: relative;
 
-    h1 img {
-      opacity: 0;
-    }
 
     .pc-menu {
       display: flex;
