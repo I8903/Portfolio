@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* CSS Document */
+/* top */
+.section-top__image {
+  height: 250px;
+  background-image: url("../photo/top/top9.JPG");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.section-top__image-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.30);
+}
+.section-top__image-message {
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+}
+.section-top__image-message h2 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  text-shadow: 1px 2px 3px #666;
+}
+@media(min-width:405px) {
+  .section-top__image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+  }
+  .section-top__image-message h2 {
+    font-size: 3.8rem;
+  }
+}
+@media(min-width:880px) {
+  .section-top__image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  .section-top__image-message h2 {
+    font-size: 4.8rem;
+  }
+}
+/* studio */
+.section-map__adress {
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  list-style: none;
+}
+.section-map__adress iframe {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.section-map__title h3 {
+  font-size: 2.6rem;
+  font-weight: 350;
+  text-align: center;
+  line-height: 1.5;
+  padding: 50px 0 25px;
+}
+.section-map__title p{
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.5;
+padding:0 18px 60px; 
+}
+.section-map__message p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 15px 35px 0;
+}
+@media(min-width:780px) {
+.section-map__title h3 {
+  font-size: 4.0rem;
+  font-weight: 500;
+  padding: 70px 0 30px;
+}
+.section-map__title p{
+  font-size: 2.1rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.5;
+padding:0 100px 100px; 
+}
+.section-map__message p {
+  font-size: 2.0rem;
+  line-height: 2.0;
+  text-align: left;
+  padding: 15px 35px 0;
+}
+  .section-map__adress {
+    height: 600px;
+    width: 600px;
+  }
+  .section-map__imazato ul,.section-map__tsuruhasi ul,.section-map__tamatsukuri ul,.section-map__sirohigasi ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+}
+.section-map {
+  padding-bottom: 50px;
+}
+/* price */
+.section-price h3 img {
+  max-width: 200px;
+  padding-top: 50px;
+}
+.section-price__whole{
+  padding-bottom: 100px;
+}
+.section-price__whole ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.section-price__whole ul li {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.section-price__whole ul li img {
+  max-width: 270px;
+}
+@media(min-width:1040px) {
+  .section-price h3 img {
+    max-width: 250px;
+    padding-top: 50px;
+  }
+  .section-price__whole ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .section-price__whole ul li img {
+    max-width: 370px;
+  }
+}
+/* inquiry */
+.section-inquiry__photo img {
+  width: 100%;
+  padding: 50px 35px 0;
+}
+.section-inquiry__button {
+  background: url("../photo/top/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+.section-inquiry__button-otoiawase img {
+  max-width: 170px;
+  padding-top: 20px;
+}
+.section-inquiry__button-yazirusi img {
+  max-width: 200px;
+  padding-top: 20px;
+}
+.section-inquiry__button-set ul {
+  display: flex;
+  justify-content: center;
+}
+.section-inquiry__button-line img {
+  max-width: 130px;
+  padding-top: 35px;
+  margin-right: 35px;
+}
+.section-inquiry__button-instagram img {
+  padding: 20px 20px 20px 0;
+}
+.section-inquiry {
+  padding-bottom: 70px;
+}
+@media(min-width:450px) {
+  .section-inquiry__button {
+    background-size: cover;
+  }
+}
+@media(min-width:900px) {
+  .section-inquiry__photo img {
+    padding: 0;
+    margin: 0;
+    max-width: 550px;
+  }
+  .section-inquiry__button {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+  }
+  .section-inquiry__box {
+    display: flex;
+    justify-content: center;
+  }
+  .section-inquiry__button-otoiawase img, .section-inquiry__button-yazirusi img {
+    max-width: 250px;
+  }
+  .section-inquiry__button-otoiawase {
+    padding: 50px 100px 20px;
+  }
+  .section-inquiry__button-yazirusi {
+    padding: 0 100px 20px;
+  }
+  .section-inquiry__button-line img {
+    max-width: 200px;
+  }
+}

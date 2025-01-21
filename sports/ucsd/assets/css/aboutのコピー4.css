@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+/* top */
+.section-top__image {
+  height: 40vh;
+  width: 100%;
+  align-items: center;
+  background-image: url("../photo/top/top2.JPG");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.section-top__image-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.30);
+}
+.section-top__image-message {
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.section-top__image-message h2 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  text-shadow: 1px 2px 3px #666;
+
+}
+@media(min-width:405px) {
+  .section-top__image {
+    height: 350px;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .section-top__image-message h2 {
+    font-size: 3.8rem;
+  }
+}
+
+@media(min-width:880px) {
+  .section-top__image {
+    height: 400px;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .section-top__image-message h2 {
+    font-size: 4.8rem;
+  }
+}
+/* about */
+.section-about__message img {
+  max-width: 350px;
+  padding: 65px 10px 35px;
+}
+.section-about__message p {
+  padding: 0 30px;
+  font-size: 1.6rem;
+  font-family: Noto Sans C JK JP;
+}
+@media(min-width:1040px) {
+  .section-about__message img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .section-about__message p {
+    padding: 0 200px;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+}
+/* class */
+.section-class__site-map li img {
+  width: 100%;
+  padding: 50px 50px 0;
+}
+@media(min-width:700px) {
+.section-class__site-map li img {
+  width: 100%;
+  padding: 70px 150px 0;
+}
+}
+@media(min-width:880px) {
+  .section-class__site-map ul {
+    list-style: none;
+  }
+  .section-class-site-map__first {
+    display: flex;
+    padding: 40px 30px;
+    justify-content: center;
+  }
+  .section-class-site-map__second {
+    display: flex;
+    padding: 40px 30px;
+    justify-content: center;
+  }
+}
+/* instructor */
+.section-instructor h2 img {
+  max-width: 300px;
+  padding: 100px 0 40px;
+}
+.section-instructor img {
+  width: 100%;
+  padding: 0 35px;
+  align-items: center;
+}
+.section-instructor-text {
+  padding: 40px 35px 100px;
+  text-align: left;
+}
+.section-instructor h3 {
+  font-size: 2.4rem;
+  font-family: Noto Sans C JK JP;
+  font-weight: 300;
+  padding-bottom: 35px;
+}
+.section-instructor-text p {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+@media(min-width:1170px) {
+  .section-instructor-text  {
+    width: 50vw;
+    padding: 44px;
+  }
+  .section-instructor h2 img {
+    max-width: 500px;
+    padding: 150px 0 100px;
+  }
+  .section-instructor-text h3 {
+    font-size: 3.0rem;
+  }
+  .section-instructor-text p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .section-instructor-text h4 {
+    font-size: 2.4rem;
+    padding: 30px 0 20px;
+  }
+  .section-instructor li img {
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 40%;
+  }
+  .section-instructor__box ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+  }
+    .section-instructor__box-2 ul {
+    display: flex;
+    flex-flow: row-reverse;
+    list-style: none;
+    justify-content: right;
+  }
+  .section-instructor {
+    padding-bottom: 150px;
+  }
+}
+/* inquiry */
+.section-inquiry__photo img {
+  width: 100%;
+  padding: 50px 35px 0;
+}
+.section-inquiry__button {
+  background: url("../photo/top/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+.section-inquiry__button-otoiawase img {
+  max-width: 170px;
+  padding-top: 20px;
+}
+.section-inquiry__button-yazirusi img {
+  max-width: 200px;
+  padding-top: 20px;
+}
+.section-inquiry__button-set ul {
+  display: flex;
+  justify-content: center;
+}
+.section-inquiry__button-line img {
+  max-width: 130px;
+  padding-top: 35px;
+  margin-right: 35px;
+}
+.section-inquiry__button-instagram img {
+  padding: 20px 20px 20px 0;
+}
+.section-inquiry {
+  padding-bottom: 70px;
+}
+@media(min-width:450px) {
+  .section-inquiry__button {
+    background-size: cover;
+  }
+}
+@media(min-width:900px) {
+  .section-inquiry__photo img {
+    padding: 0;
+    margin: 0;
+    max-width: 550px;
+  }
+  .section-inquiry__button {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+  }
+  .section-inquiry__box {
+    display: flex;
+    justify-content: center;
+  }
+  .section-inquiry__button-otoiawase img, .section-inquiry__button-yazirusi img {
+    max-width: 250px;
+  }
+  .section-inquiry__button-otoiawase {
+    padding: 50px 100px 20px;
+  }
+  .section-inquiry__button-yazirusi {
+    padding: 0 100px 20px;
+  }
+  .section-inquiry__button-line img {
+    max-width: 200px;
+  }
+}

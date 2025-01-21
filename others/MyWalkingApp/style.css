@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.btn {
+  background-color: #329e00;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: calc(100% - 32px);
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  transition: all .5s;
+  z-index: 2;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+
+
+  h1 {
+    font-size: 0;
+  }
+}
+
+.logo-pc {
+  display: none;
+}
+
+/* hero */
+
+.hero {
+  background-color: #99e6ff;
+  background-image: url(bg.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding-top: 64px;
+  text-align: center;
+
+  .btn {
+    margin-top: 64px;
+  }
+
+  img {
+    margin-top: 64px;
+  }
+}
+
+/* feature */
+
+
+.animate {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.features {
+  padding: 64px 16px;
+  text-align: center;
+
+  .feature {
+    margin: 64px auto 0 auto;
+
+    h3 {
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    p {
+      text-align: left;
+      line-height: 1.5;
+      margin-top: 16px;
+    }
+  }
+
+  .feature-rvr {
+    margin: 64px auto 0 auto;
+
+    h3 {
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    p {
+      text-align: left;
+      line-height: 1.5;
+      margin-top: 16px;
+    }
+  }
+}
+
+
+/* users */
+
+.content {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.content.wppear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+li:nth-child(1) {
+  transition-delay: 0s;
+}
+
+li:nth-child(2) {
+  transition-delay: .5s;
+}
+
+li:nth-child(3) {
+  transition-delay: 1s;
+}
+
+.users {
+  background-color: #99e6ff;
+  padding-top: 64px;
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #22577a;
+  }
+
+  .box {
+    margin: 64px auto 0 auto;
+    width: calc(100% - 32px);
+    max-width: 800px;
+    padding-bottom: 64px;
+  }
+
+  .content {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    list-style: none;
+
+    p {
+      line-height: 1.6;
+    }
+
+    .name {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 16px;
+    }
+  }
+
+  .content+.content {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 16px;
+    list-style: none;
+
+    p {
+      line-height: 1.6;
+    }
+
+    .name {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 16px;
+    }
+  }
+}
+
+/* start */
+
+.start {
+  background-color: #85d8f2;
+  padding: 64px 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  div {
+    text-align: center;
+    margin-top: 64px;
+  }
+}
+
+
+/* footer */
+
+footer {
+  padding: 64px 0;
+  background-color: #333;
+  text-align: center;
+
+  small {
+    color: #fff;
+    font-size: 0.87rem;
+  }
+}
+
+/* large screen */
+
+@media (min-width: 600px) {
+
+  /* header */
+
+  .logo-sp {
+    display: none;
+  }
+
+  .logo-pc {
+    display: inline;
+  }
+
+  /* hero */
+
+  .hero .container {
+    display: flex;
+    align-items: center;
+
+    div {
+      flex: 1;
+    }
+
+    img {
+      margin-top: 0;
+    }
+  }
+
+  /* feature */
+
+  .feature {
+    display: flex;
+    gap: 32px;
+
+    .pic {
+      width: 300px;
+    }
+
+    .desc {
+      flex: 1;
+    }
+  }
+
+  .feature-rvr {
+    flex-direction: row-reverse;
+    display: flex;
+    gap: 32px;
+
+    .pic {
+      width: 300px;
+    }
+
+    .desc {
+      flex: 1;
+    }
+  }
+
+  /* user */
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    .content {
+      width: calc((100% - 32px) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .content+.content {
+      margin-top: 0px;
+      width: calc((100% - 32px) / 3);
+    }
+  }
+}
+
+.feature {
+  transform: translateX(-300px);
+}
+
+.feature-rvr {
+  transform: translateX(300px);
+}
+
+
+
+
+
+/* apiのスクロール編 */
+
+header.scrolled {
+  background-color: #fff;
+}

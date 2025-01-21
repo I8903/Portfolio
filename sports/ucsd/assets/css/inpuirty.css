@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+/* top */
+.section-top__image {
+  height: 250px;
+  background-image: url("../photo/top/top1.JPG");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.section-top__image-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.30);
+}
+.section-top__image-message {
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+}
+.section-top__image-message h2 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  text-shadow: 1px 2px 3px #666;
+}
+@media(min-width:405px) {
+  .section-top__image{ 
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    }
+  .section-top__image-message h2 {
+    font-size: 3.8rem;
+  }
+}
+@media(min-width:880px) {
+  .section-top__image {
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+  }
+  .section-top__image-message h2 {
+    font-size: 4.8rem;
+  }
+}
+/* inpuirty */
+.section-inpuirty__message h3 img {
+  padding-top: 80px;
+  text-align: center;
+  width: 200px;
+}
+.section-inpuirty__message p {
+  padding: 35px 20px 0 20px;
+  font-size: 1.6rem;
+}
+.section-inpuiry__button li {
+  padding: 50px 0;
+}
+.section-inpuiry__button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section-inpuiry__button {
+  width: 270px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+@media(min-width:1040px) {
+  .section-inpuirty__message h3 img {
+    padding-top: 80px;
+    text-align: center;
+    width: auto;
+  }
+.section-inpuirty__message p {
+  padding: 35px 170px 0 ;
+  font-size: 2.0rem;
+  line-height: 2.0;
+}
+  .section-inpuiry__button {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 50px 0 80px ;
+  }
+  .section-inpuiry__button-line,.section-inpuiry__button-instagram,.section-inpuiry__button-G-mail {
+    padding: 0 ;
+    margin: 0 70px;
+  }
+}

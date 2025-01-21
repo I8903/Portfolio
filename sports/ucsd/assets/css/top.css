@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+/* top */
+.section-top__image-slider{
+  height: 100%;
+  overflow: hidden;
+}
+.section-top__image-slider img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+@media(min-width:450px) {
+  .section-top__image-slider img {
+    width: 100%;
+  }
+}
+/* class */
+.section-class h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 50px 0;
+}
+.section-class__top {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0 35px;
+}
+.section-class__step img {
+  padding-top: 10px;
+}
+.section-class p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 50px 27px 30px;
+}
+.section-class__site-map li img {
+  width: 100%;
+  padding: 50px 50px 0;
+}
+@media(min-width:760px) {
+  .section-class__top {
+    max-width: 450px;
+  }
+  .section-class__step{
+    text-align: right;
+    padding-right: 250px;
+    padding-top: 50px;
+  }
+  .section-class p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px 140px 30px;
+  }
+  .section-class__site-map img {
+    max-width: 650px;
+  }
+}
+@media(min-width:880px) {
+  .section-class h2 {
+    font-size: 4.0rem;
+    padding-top: 100px;
+  }
+  .section-class__top {
+    max-width: 800px;
+  }
+  .section-class__step{
+    text-align: right;
+    padding-right: 300px;
+    padding-top: 50px;
+  }
+  .section-class p {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 50px 230px 0;
+  }
+  .section-class__site-map ul {
+    list-style: none;
+  }
+  .section-class-site-map__first {
+    display: flex;
+    padding: 40px 30px;
+    justify-content: center;
+  }
+  .section-class-site-map__second {
+    display: flex;
+    padding: 40px 30px;
+    justify-content: center;
+  }
+}
+/* 助成金 */
+.osaka-price picture{
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 100px 0 5px;
+}
+.osaka-price__text{
+  font-size: 1.8rem;
+  padding-top: 20px;
+  line-height: 2.0;
+}
+.osaka-price__text-color{
+  color: #F08B52;
+}
+.osaka-price__text-color a{
+  color: #F08B52;
+}
+/* studio */
+.section-studio h2 img {
+  width: 100%;
+  padding: 50px 60px 20px;
+}
+.section-studio ul li img {
+  max-width: 150px;
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+}
+@media(min-width:450px) {
+  .section-studio h2 img {
+    max-width: 400px;
+  }
+  .section-studio ul li img{
+  max-width: 200px;
+  }
+}
+@media(min-width:900px) {
+  .section-studio h2 img {
+    max-width: 500px;
+  }
+  .section-studio ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .section-studio {
+    padding-bottom: 50px;
+  }
+  .section-studio li img {
+    margin-left: 40px;
+  }
+}
+/* instagram */
+.snapwidget-widget {
+  width: 100%;
+    height: calc(100vw / 5);
+}
+
+/* instructor */
+.section-instructor h2 img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 34px;
+  padding-top: 40px;
+}
+.section-instructor__autoplay img {
+  position: relative;
+  width: 82%;
+  overflow: hidden;
+  margin: auto;
+}
+.section-instructor__autoplay{
+  overflow: hidden;
+}
+@media(min-width:780px) {
+  .section-instructor {
+    padding-bottom: 80px;
+  }
+  .section-instructor h2 img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-top: 70px;
+  }
+}
+/* inquiry */
+.section-inquiry__photo img {
+  width: 100%;
+  padding: 50px 35px 0;
+}
+.section-inquiry__button {
+  background: url("../photo/top/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+.section-inquiry__button-otoiawase img {
+  max-width: 170px;
+  padding-top: 20px;
+}
+.section-inquiry__button-yazirusi img {
+  max-width: 200px;
+  padding-top: 20px;
+}
+.section-inquiry__button-set ul {
+  display: flex;
+  justify-content: center;
+}
+.section-inquiry__button-line img {
+  max-width: 130px;
+  padding-top: 35px;
+  margin-right: 35px;
+}
+.section-inquiry__button-instagram img {
+  padding: 20px 20px 20px 0;
+}
+.section-inquiry {
+  padding-bottom: 70px;
+}
+@media(min-width:450px) {
+  .section-inquiry__button {
+    background-size: 400px;
+  }
+  .section-inquiry__button {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+  }
+}
+@media(min-width:900px) {
+  .section-inquiry__photo img {
+    padding: 0;
+    margin: 0;
+    max-width: 550px;
+  }
+  .section-inquiry__button {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+  }
+  .section-inquiry__box {
+    display: flex;
+    justify-content: center;
+  }
+  .section-inquiry__button-otoiawase img, .section-inquiry__button-yazirusi img {
+    max-width: 250px;
+  }
+  .section-inquiry__button-otoiawase {
+    padding: 50px 100px 20px;
+  }
+  .section-inquiry__button-yazirusi {
+    padding: 0 100px 20px;
+  }
+  .section-inquiry__button-line img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* CSS Document */
+img {
+  width: 100%;
+}
+.header {
+  background-color: #ffffff;
+  height: 30px;
+  width: 100%;
+}
+.header-logo {
+  display: flex;
+  height: 30px;
+  width: 100px;
+}
+.header nav {
+  display: none;
+}
+
+@media(min-width:1160px) {
+  .header {
+    height: 60px;
+  }
+  .header-content__wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .header-logo {
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    left: 0;
+  }
+  .header nav {
+    display: block;
+    text-align: right;
+  }
+  .header nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+  }
+}
+.main {
+  background-color: #ffffff;
+}
+@media(min-width:1040px) {
+  .main {
+    padding-bottom: 50px;
+  }
+}
+.section-top__image {
+  height: 370px;
+  width: 100%;
+  background-image: url("../photo/pexels-jill-wellington-533360.png");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.section-top__image-filter {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: auto;
+  height: 100%;
+  width: 260px;
+}
+.section-top__tittle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 105px;
+  padding-bottom: 20px;
+}
+.section-top__tittle-text {
+  padding-bottom: 60px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn img {
+  height: 50px;
+  width: 100%;
+  margin: auto;
+}
+@media(min-width:780px) {
+  .section-top__image {
+    background-image: url("../photo/pexels-jill-wellington-533360.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+  }
+  .section-top__image-filter {
+    width: 800px;
+  }
+  .section-top__tittle {
+    font-size: 36px;
+    text-align: center;
+  }
+  .section-top__tittle-text {
+    font-size: 36px;
+    text-align: center;
+  }
+  .btn img {
+    height: 130px;
+    width: 600px;
+    margin: auto 50px;
+  }
+}
+.section-about {
+  padding: 40px 20px;
+}
+.section-about h2 {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.section-about p {
+  font-size: 14px;
+  text-align: center;
+}
+@media(min-width:1040px) {
+  .section-about {
+    padding: 60px 140px 70px;
+  }
+  .section-about h2 {
+    font-size: 30px;
+    padding-bottom: 45px;
+  }
+  .section-about p {
+    font-size: 24px;
+    line-height: 1.7;
+  }
+}
+.section-three {
+  background-color: #ffffff;
+}
+.section-three__tittle {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 50px 25px;
+}
+.section-three__back {
+  background-color: #ffffec;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-three ul {
+  list-style: none;
+}
+.section-three__image {
+  width: 100%;
+  margin: auto;
+}
+.section-three__list1-text h3 {
+  font-size: 14px;
+  text-align: left;
+  padding: 20px 20px 30px;
+}
+.section-three__list1-text {
+  font-size: 14px;
+  padding-bottom: 60px;
+}
+.section-three__list2-text h3 {
+  font-size: 14px;
+  text-align: left;
+  padding: 20px 20px 30px;
+}
+.section-three__list2-text {
+  font-size: 14px;
+  padding-bottom: 60px;
+}
+.section-three__list3-text h3 {
+  font-size: 14px;
+  text-align: left;
+  padding: 20px 20px 30px;
+}
+.section-three__list3-text {
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+@media(min-width:680px) {
+  .section-three__tittle h2 {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  .section-three__list1 {
+    flex-flow: row-reverse;
+  }
+  .section-three__list3 {
+    flex-flow: row-reverse;
+  }
+  .section-three__back {
+    width: 100%;
+  }
+  .section-three__list1, .section-three__list2, .section-three__list3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 500px;
+  }
+  .section-three__image {
+    width: 50vw;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 40%;
+  }
+  .section-three__list1-text h3, .section-three__list2-text h3, .section-three__list3-text h3 {
+    font-size: 24px;
+    text-align: center;
+    padding: 70px 0 50px;
+  }
+  .section-three__list1-text p, .section-three__list2-text p, .section-three__list3-text p {
+    font-size: 24px;
+    padding: 0 40px 130px;
+    line-height: 1.7;
+  }
+}
+.section-trial__set-lead {
+  font-size: 16px;
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+.section-trial__set ruby {
+  font-size: 18px;
+}
+.section-trial__set-photo {
+  padding: 20px;
+}
+.section-trial__set-season1, .section-trial__set-season2 {
+  padding-bottom: 15px;
+}
+.section-trial__set-season h3, p {
+  font-size: 14px;
+}
+.btn-trial img {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+@media(min-width:680px) {
+  .section-trial__set-lead {
+    font-size: 24px;
+    text-align: center;
+    padding: 70px 0 50px;
+  }
+  .section-trial__set ruby {
+    font-size: 30px;
+    padding-bottom: 45px;
+  }
+  .section-trial ul {
+    max-width: 820px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .section-trial__set-season1, .section-trial__set-season2 {
+    width: 520px;
+    background-color: #ffffff;
+  }
+  .section-trial__set-season2 {
+    margin-right: 0;
+  }
+  .btn-trial img {
+    height: 130px;
+    width: 600px;
+    margin: auto 50px 50px;
+  }
+}
+.section-contract-background {
+  width: 100%;
+  background-image: url("../photo/4545672_s.png");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.section-contract_farmer-text {
+  font-size: 16px;
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+.section-contract_farmer h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 20px 30px;
+}
+.section-contract__farmer-photo {
+  margin: auto;
+  padding: 0 20px;
+}
+.section-contract_farmer ul li h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+.section-contract_farmer ul li p {
+  font-size: 14px;
+  text-align: left;
+  padding: 0 20px 30px;
+  line-height: 1.7;
+}
+@media(min-width:680px) {
+  .section-contract_farmer-text {
+    font-size: 24px;
+    text-align: center;
+    padding: 40px 0 ;
+  }
+  .section-contract_farmer h3 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+    
+  }
+  .section-contract__farmer-photo {
+    height: 300px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .section-contract_farmer ul {
+    max-width: 1040px;
+    padding:0;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-contract_farmer ul li h3 {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+}
+.section-question h2 {
+  font-size: 18px;
+  text-align: center;
+  padding: 40px 20px 0;
+}
+.section-question__text ul li h3 {
+  font-size: 16px;
+  text-align: left;
+  padding: 30px 20px 35px;
+}
+.section-question__text-sub {
+  font-size: 15px;
+  text-align: left;
+  padding: 0 20px 20px;
+}
+.section-question__text ul li p {
+  text-align: left;
+  font-size: 14px;
+  padding: 0 20px 20px;
+}
+@media(min-width:480px){
+.section-question h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 80px 0 50px;
+}
+.section-question__text ul li h3 {
+  max-width: 1040px;
+  font-size: 26px;
+  text-align: left;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  }
+  .section-question__text-sub {
+  max-width: 1040px;
+  font-size: 25px;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.section-question__text ul li p {
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 24px;
+  padding-bottom: 45px;
+  line-height: 1.7;
+}
+}
+.section-trial__background {
+  width: 100%;
+  background-image: url("../photo/621784_s.png");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.footer {
+  background-color: #ffffff;
+  height: 80px;
+  width: 100%;
+}
+.footer-logo {
+  margin: 40px auto;
+  height: 30px;
+  width: 100px;
+}
+@media(min-width:1040px){
+.footer-logo {
+  margin: 0 auto;
+  height: 80px;
+  width: 250px;
+}
+}

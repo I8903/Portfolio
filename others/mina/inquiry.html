@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+<meta property="og:title" content="MARU ROOM"/>
+<meta property="og:site_name" content="MARU ROOM">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja-jp">
+<meta property="og:image" content="assets/images/top/865F86AD-775D-4F55-8D8A-C9FC8C3E2FE0.JPG">
+<meta property="og:description" content="ファッション雑誌には夢が詰まっている！MARU ROOM は、雑誌を通じて、ファッションや美容に興味がある人に関わる全ての人達の夢を応援します。"/>
+<meta name="twitter:card" content="summary" />
+<title>MARU ROOM</title>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/inpuiry.css">
+<link href="assets/images/common/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+</head>
+
+<body>
+<header class="header">
+  <div class="header-content-wrapper">
+    <h1><a href="index.html">MARU ROOM</a></h1>
+    <div id="open-button" class="open-button"><span></span></div>
+    <nav>
+      <div id="close-button" class="close-button">x</div>
+      <ul>
+        <li><a href="about.html">雑誌概要</a></li>
+        <li><a href="POPULAR TAGS.html">POPULAR TAGS</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="inquiry.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <sectoin class="section-top">
+    <div class="section-top__image">
+      <div class="section-top__image-filter">
+        <h2>お問い合わせ</h2>
+      </div>
+    </div>
+  </sectoin>
+  <form class="inquiry-form" action="inquiry.html">
+    <p>
+      <label for="form_name"> お名前</label>
+      <input id="form_name" type="text" placeholder="入力して下さい。">
+    </p>
+    <p>
+      <label for="">ご連絡について</label>
+      <span class="inquiry-form__contact-method">
+      <input id="form_reply_method_1" type="radio" name="form_reply_method">
+      <label class="small-label" for="form_reply_method_1">電話で折り返してほしい</label>
+      <br>
+      <input id="form_reply_method_2" type="radio" name="form_reply_method">
+      <label class="small-label" for="form_reply_method_2"> メールで折り返してほしい</label>
+      </span> </p>
+    <p>
+      <label for="form_email">メールアドレス</label>
+      <input id="form_email" type="email" placeholder="入力して下さい。">
+    </p>
+    <p>
+      <label for="form_inpuiry_kind">お問い合わせの種類</label>
+      <select  id="form_inpuiry_kind">
+        <option value="">選択してください。</option>
+        <option value=""> サービスに関するお問い合わせ。</option>
+        <option value=""> その他のお問い合わせ。</option>
+      </select>
+    </p>
+    <p>
+      <label for="form_inpuiry_detail" >お問い合わせ詳細</label>
+      <textarea  id="form_inpuiry_detail" placeholder="入力して下さい。" ></textarea>
+    </p>
+    <p>
+      <input class="inquiry-form__privacy" id="form_privacy" type="checkbox">
+      <label class="small-label" for="form_privacy"><a class="form_inpuiry__privacy" href="">プライバシーポリシー</a>に同意</label>
+    </p>
+    <input class="inquiry-form__submit" type="submit" value=" 確認する ">
+  </form>
+</main>
+<footer class="footer">
+  <div class="footer-content-wrapper">
+    <nav class="site-map">
+      <ul class="site-map__main-links">
+        <li><a href="about.html">雑誌概要</a></li>
+        <li><a href="POPULAR TAGS.html">POPULAR TAGS</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="inquiry.html">お問い合わせ</a></li>
+      </ul>
+      <ul class="site-map__tags-links">
+        <li> <a href="https://www.mina.ne.jp/">＃こだわり女子の偏見ライフ情報</a> </li>
+        <li> <a href="https://www.mina.ne.jp/">＃おうち時間</a> </li>
+        <li> <a href="https://www.mina.ne.jp/">＃ブランド</a> </li>
+      </ul>
+    </nav>
+    <small class="footer__copyright">Copyright 2023 MARU ROOM Inc.</small> </div>
+</footer>
+</body>
+</html>
