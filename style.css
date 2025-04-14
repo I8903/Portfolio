@@ -69,6 +69,11 @@ header {
   height: 50px;
   background-color: #FFEACE;
 
+  .logo {
+    padding-top: 10px;
+    height: 100%;
+  }
+
   h1 img {
     width: 100%;
     height: 35px;
@@ -721,6 +726,10 @@ footer {
     background-color: #FFEACE;
     position: relative;
 
+    h1 img {
+      opacity: 0;
+    }
+
     .pc-menu {
       display: flex;
       position: absolute;
@@ -768,7 +777,6 @@ footer {
 
   .top {
     width: 100%;
-    padding-top: 80vh;
     background-position: center -670px;
   }
 
