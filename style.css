@@ -28,9 +28,9 @@ h2 {
   justify-content: center;
   right: 20px;
   bottom: 20px;
-  width: 80px;
-  height: 80px;
-  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
   font-weight: bold;
   color: #fff;
   background: #000;
@@ -441,7 +441,8 @@ li:nth-child(3) {
   background-position: center;
   text-align: center;
   position: relative;
-  height: 100%;
+  z-index: 0;
+  overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
 
@@ -480,7 +481,14 @@ li:nth-child(3) {
 
 }
 
-
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    /* Safari専用 */
+    .orginalWork {
+      background-attachment: scroll; /* or remove */
+    }
+  }
+}
 
 
 /* orginalwork js*/
